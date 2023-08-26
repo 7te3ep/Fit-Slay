@@ -1,0 +1,44 @@
+.show {
+   animation: show 0.5s forwards ease-out;
+   -webkit-animation: show 0.5s forwards ease-out;
+}
+
+.hide {
+   animation: hide 0.5s forwards ease-in ;
+   -webkit-animation: hide 0.5s forwards ease-in ;
+}
+
+.bump {
+   animation: bump 1s forwards ease-in ;
+   -webkit-animation: bump 1s forwards ease-in ;
+}
+
+@keyframes show {
+   0% {
+      left: 100vw;
+   }
+
+   100% {
+      left: 0vw;
+   }
+}
+
+@keyframes hide {
+   0% {
+      left: 0vw;
+   }
+
+   100% {
+      left: 100vw;
+   }
+}
+
+@keyframes bump {
+   0% {
+      opacity: 100%;
+   }
+
+   100% {
+      opacity: 0%;
+   }
+}
